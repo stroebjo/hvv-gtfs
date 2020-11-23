@@ -1,0 +1,31 @@
+# -*- mode: conf-unix; -*-
+
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# defaults
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# dont change CSV files
+[*.{csv,tsv}]
+insert_final_newline = false
+
+# 4 space indentation
+[*.{ini,py,py.tpl,rst}]
+indent_style = space
+indent_size = 4
+
+# 4-width tabbed indentation
+[*.{sh,bat.tpl,Makefile.tpl}]
+indent_style = tab
+indent_size = 4
+
+# and travis does its own thing
+[*.yml]
+indent_style = space
+indent_size = 2
